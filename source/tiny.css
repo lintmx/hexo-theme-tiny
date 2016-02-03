@@ -1,0 +1,329 @@
+::selection {
+	color:rgba(0,233,233,.7)
+}
+
+::-moz-selection {
+    color:rgba(0,233,233,.7)
+}
+
+body p {
+    color: rgba(25, 33, 35, 0.8);
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(50,100,233,.7);
+    text-shadow: 0px 0px 1px rgba(10,100,233,.7);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #333;
+}
+
+header,main,footer {
+    margin: 0px auto;
+    max-width: 900px;
+}
+
+header {
+    height: 100px;
+    margin-top: 36px;
+    margin-bottom: 64px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 24px;
+}
+
+header img:hover {
+    cursor: wait;
+}
+
+header>a {
+    color: #222;
+    float: left;
+    line-height: 100px;
+    margin-left: 18px;
+    font-size: 36px;
+}
+
+header nav {
+    float: right;
+    margin-right: 24px;
+}
+
+header nav>a {
+    margin: 0px 10px;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+section>h1>a{
+    color: #222;
+    font-size: 48px;
+}
+
+section>h1~time {
+    color: #777;
+    margin-left: 2em;
+    font-style: oblique;
+}
+
+section>h1~span {
+    display: block;
+    padding-left: 8px;
+}
+
+section>h1~span hr {
+    display: none;
+}
+
+section>h1~a {
+    color: #666;
+    font-weight: bolder;
+    padding-left: 24px;
+}
+
+section~p {
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+section~p a {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+section~p a:last-child {
+    float: right;
+}
+
+article>h1:first-child {
+    color: #222;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+article time {
+    color: #777;
+    margin-left: 2em;
+    font-style: oblique;
+}
+
+article>h1~span {
+    margin-left: 36px;
+}
+
+article span a {
+    padding: 0px 12px;
+    margin: 0px 12px;
+    font-style: oblique;
+}
+
+article img {
+    max-width: 100%;
+}
+code {
+	margin:0 2px;
+	padding:3px 5px;
+	color:#222;
+	border-radius:8px;
+    background-color:rgba(0,0,0,.1);
+}
+
+pre {
+    color: #777;
+    font-size: 12px;
+}
+
+blockquote {
+    font-size: 14px;
+    font-style: oblique;
+    margin: 4px 0;
+    padding-left: 20px;
+    border-left: 4px solid #AAA;
+}
+.highlight {
+	position:relative;
+	margin:1em 0;
+	border-radius:8px;
+	line-height:1.1em;
+	background-color: #F7F7F7;
+	overflow-x:auto
+}
+.highlight table,.highlight tr,.highlight td {
+	width:100%;
+	border-collapse:collapse;
+	padding:0;
+	margin:0
+}
+.highlight .gutter {
+	display:none
+}
+.highlight .code pre {
+	padding:1.2em 1.4em;
+	line-height:1.5em;
+	margin:0
+}
+.highlight.html .code:after,.highlight.js .code:after,.highlight.bash .code:after,.highlight.css .code:after,.highlight.scss .code:after,.highlight.diff .code:after,.highlight.java .code:after,.highlight.xml .code:after,.highlight.python .code:after,.highlight.json .code:after,.highlight.swift .code:after,.highlight.ruby .code:after,.highlight.perl .code:after,.highlight.php .code:after,.highlight.c .code:after {
+	position:absolute;
+	top:0;
+	right:0;
+	color:#ccc;
+	text-align:right;
+	font-size:0.75em;
+	padding:5px 10px 0;
+	line-height:15px;
+	height:15px;
+	font-weight:600
+}
+.highlight.html .code:after {
+	content:"HTML"
+}
+.highlight.js .code:after {
+	content:"JS"
+}
+.highlight.bash .code:after {
+	content:"BASH"
+}
+.highlight.css .code:after {
+	content:"CSS"
+}
+.highlight.scss .code:after {
+	content:"SCSS"
+}
+.highlight.diff .code:after {
+	content:"DIFF"
+}
+.highlight.java .code:after {
+	content:"JAVA"
+}
+.highlight.xml .code:after {
+	content:"XML"
+}
+.highlight.python .code:after {
+	content:"PYTHON"
+}
+.highlight.json .code:after {
+	content:"JSON"
+}
+.highlight.swift .code:after {
+	content:"SWIFT"
+}
+.highlight.ruby .code:after {
+	content:"RUBY"
+}
+.highlight.perl .code:after {
+	content:"PERL"
+}
+.highlight.php .code:after {
+	content:"PHP"
+}
+.highlight.c .code:after {
+	content:"C"
+}
+.highlight.java .code:after {
+	content:"JAVA"
+}
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
+
+section>a {
+    margin: 36px 0px;
+    display: block;
+    line-height: 36px;
+}
+section>a>h2 {
+    color: #222;
+    font-size: 36px;
+    margin: 0px;
+    display: inline-block;
+}
+
+section>a>time {
+    color: #777;
+    float: right;
+    font-style: oblique;
+}
+
+footer {
+    margin-top: 36px;
+}
+
+footer p {
+    color: #AAA;
+    font-size: 12px;
+}
+
+footer a {
+    color: #AAA;
+}
+
+footer p:first-of-type {
+    float: left;
+}
+
+footer p:last-of-type {
+    float: right;
+}

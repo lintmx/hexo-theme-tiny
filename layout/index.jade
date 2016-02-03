@@ -1,0 +1,27 @@
+extends base
+
+block content
+    main
+        for post in page.posts.toArray()
+            section
+                h1
+                    a(href= url_for(post.path)) #{post.title}
+                time(datetime= date(post.date, 'YYYY-MM-DDTHH:mm:ssZ'),pubdate= 'pubdate') #{date(page.date, config.dateformat)}
+                span 
+                    if post.excerpt
+                        != post.excerpt
+                    else    
+                        != post.content
+                a(href= url_for(post.path)) More...
+                p
+                    br
+        if page.total > 1
+            p
+                if page.prev
+                    a(href= url_for(page.prev_link)) ← Newer Posts
+                else
+                    a ← Newer Posts
+                if page.next
+                    a(href= url_for(page.next_link)) Older Posts →
+                else 
+                    a Older Posts →
