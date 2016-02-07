@@ -2,7 +2,7 @@
 
 本项目是一个 [Hexo](https://hexo.io) 博客的主题。
 
-项目使用 [Jade](http://jade-lang.com) 开发，一切为本人博客所定制，所以欢迎 Fork 后自行修改。
+项目使用 [Jade](http://jade-lang.com) 和 [Stylus](http://stylus-lang.com/) 开发，一切为本人博客所定制，所以欢迎 Fork 后自行修改。
 
 # Preview
 
@@ -13,7 +13,7 @@
 ```
 $ cd Hexo
 $ git clone https://github.com/lintmx/hexo-theme-tiny themes/tiny
-$ npm install hexo-renderer-jade --save
+$ npm install hexo-renderer-jade hexo-renderer-stylus --save
 ```
 
 # License
