@@ -6,7 +6,7 @@ block content
             section
                 a(href= url_for(post.path))
                     h2 #{post.title}
-                    time(datetime= date(post.date, 'YYYY-MM-DDTHH:mm:ssZ'),pubdate= 'pubdate')  #{date(page.date, config.dateformat)}
+                    time(datetime= date(post.date, 'YYYY-MM-DDTHH:mm:ssZ'),pubdate= 'pubdate')  #{date(post.date, config.dateformat)}
         if page.total > 1
             p
                 if page.prev
