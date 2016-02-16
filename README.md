@@ -4,6 +4,24 @@
 
 项目使用 [Jade](http://jade-lang.com) 和 [Stylus](http://stylus-lang.com/) 开发，一切为本人博客所定制，所以欢迎 Fork 后自行修改。
 
+# Warning
+
+本项目以最新版 [Chromium](https://www.chromium.org) 为标准，不对旧浏览器进行任何兼容。
+
+测试通过：
+
+> Chromium 48
+
+> Google Chrome 48
+
+> Mozilla Firefox 44
+
+> Microsoft Edge
+
+不兼容：
+
+> Internet Explorer 11
+
 # Preview
 
 [LintMX](https://www.lintmx.com)
