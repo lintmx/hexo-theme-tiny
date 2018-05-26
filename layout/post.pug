@@ -1,0 +1,15 @@
+extends base
+
+block content
+    main
+        section
+            h1 #{page.title}
+            if page.date
+                time(datetime= date(page.date, 'YYYY-MM-DDTHH:mm:ssZ'),pubdate= 'pubdate') #{date(page.date, config.dateformat)}
+            if page.tags
+                span
+                    each tag in page.tags.toArray()
+                        a(href= url_for(tag.path)) #{tag.name}
+            article
+                != page.content
+            hr

@@ -1,30 +1,49 @@
-section>h1>a
-    color #222222
-    font-size 48px
-  
-section>h1~time
-    color #777777
-    margin-left 16px
-    font-style oblique
-  
-section>h1~span
-    display block
-    padding 0px 8px
-  
-section>h1~span img
-    width 100%
-  
-section>h1~span hr
-    display none
-  
-section~p
-    margin-top 48px
-    margin-bottom 24px
-  
-section~p a
-    font-size 24px
-    font-weight border
-    display inline-block
+main>section
+    padding 0 2rem
 
-section~p a:last-child
-    float right
+    &>h1
+        color rgb(32, 32, 32)
+        font-size 3rem
+        margin .75rem 0
+
+        &>a
+            color rgb(32, 32, 32)
+
+        &~time
+            color rgb(128, 128, 128)
+            padding-left 1.25rem
+            font-style oblique
+  
+        &~span
+            margin-left 3rem
+  
+        &~span a
+            margin 0 .75rem
+            font-style oblique
+
+    &>article
+        &~a
+            font-size .75rem
+            margin .25rem 0
+            padding-left 1rem
+
+        img
+            max-width 100%
+
+    &~p
+        margin-top 1.5rem
+        margin-bottom 1.5rem
+  
+    &~p a
+        font-size 1.25rem
+        display inline-block
+
+    &~p a:last-child
+        float right
+
+    &>hr
+        width 10%;
+        margin 3rem auto;
+        border 0;
+        border-top .3rem solid rgb(204, 204, 204);
+        border-radius: 10rem

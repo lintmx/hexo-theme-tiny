@@ -7,13 +7,13 @@ block content
                 a(href= url_for(post.path))
                     h2 #{post.title}
                     time(datetime= date(post.date, 'YYYY-MM-DDTHH:mm:ssZ'),pubdate= 'pubdate')  #{date(post.date, config.dateformat)}
-        if page.total > 1
+        if page.total != 1
             p
                 if page.prev
-                    a(href= url_for(page.prev_link)) ← Newer Posts
+                    a(href= url_for(page.prev_link)) <<
                 else
-                    a ← Newer Posts
+                    a
                 if page.next
-                    a(href= url_for(page.next_link)) Older Posts →
-                else 
-                    a Older Posts →
+                    a(href= url_for(page.next_link)) >>
+                else
+                    a

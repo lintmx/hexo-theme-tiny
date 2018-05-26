@@ -2,43 +2,43 @@
 
 本项目是一个 [Hexo](https://hexo.io) 博客的主题。
 
-项目使用 [Jade](http://jade-lang.com) 和 [Stylus](http://stylus-lang.com/) 开发，一切为本人博客所定制，所以欢迎 Fork 后自行修改。
+项目使用 [Pug](https://github.com/pugjs/pug) 和 [Stylus](https://stylus-lang.com/) 开发，一切为本人博客所定制，所以欢迎 Fork 后自行修改。
 
 # Warning
 
-本项目以最新版 [Chromium](https://www.chromium.org) 为标准，不对旧浏览器进行任何兼容。
-
-测试通过：
-
-> Chromium 48
-
-> Google Chrome 48
-
-> Mozilla Firefox 44
-
-> Microsoft Edge
-
-不兼容：
-
-> Internet Explorer 11
+本主题以最新版 `Chrome` 为最低标准兼容
 
 # Preview
 
-[LintMX](https://www.lintmx.com)
+~~[LintMX](https://www.lintmx.com)~~
+
+# Feature
+
+- [ ] `font-family` 适配
+
+- [ ] 移动端适配
+
+- [ ] 强迫症适配
 
 # Install
 
 ```
 $ cd Hexo
 $ git clone https://github.com/lintmx/hexo-theme-tiny themes/tiny
-$ npm install hexo-renderer-jade hexo-renderer-stylus --save
+$ npm install hexo-render-pug hexo-renderer-stylus --save
 ```
+
+# Thanks
+
+[hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) [License](https://github.com/pinggod/hexo-theme-apollo/blob/master/LICENSE)
+
+[mono_hexo](https://github.com/blackgear/mono_hexo) [License](https://github.com/blackgear/mono_hexo/blob/master/LICENSE)
 
 # License
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Leo Stock
+Copyright (c) 2018 Leo Stock
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

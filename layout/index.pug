@@ -1,0 +1,24 @@
+extends base
+
+block content
+    main
+        each post in site.posts.sort('date', -1).toArray()
+            section
+                h1
+                    a(href= url_for(post.path)) #{post.title}
+                if post.date
+                    time(datetime= date(post.date, 'YYYY-MM-DDTHH:mm:ssZ'),pubdate= 'pubdate') #{date(post.date, config.dateformat)}
+                article 
+                    != post.excerpt
+                a(href= url_for(post.path)) Read More ...
+                hr
+        if page.total != 1
+            p
+                if page.prev
+                    a(href= url_for(page.prev_link)) <<
+                else
+                    a
+                if page.next
+                    a(href= url_for(page.next_link)) >>
+                else
+                    a
