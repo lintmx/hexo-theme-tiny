@@ -10,7 +10,7 @@
 
 # Preview
 
-~~[LintMX](https://www.lintmx.com)~~
+[LintMX](https://www.lintmx.com)
 
 # Feature
 
