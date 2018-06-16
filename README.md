@@ -14,9 +14,9 @@
 
 # Feature
 
-- [ ] `font-family` 适配
+- [x] `font-family` 适配
 
-- [ ] 移动端适配
+- [x] 移动端适配
 
 - [ ] 强迫症适配
 
